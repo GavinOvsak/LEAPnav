@@ -5,50 +5,50 @@ The LEAP motion device (see www.leapmoton.com) has presented a new means of cont
 
 With just a few lines of code, LEAPnav can be added to any website and can be used to trigger events within the site or navigation between pages of a site. LEAPnav is able to communicate with a LEAP motion if the website viewer has one plugged  (or plugs one in after opening the site) and provides an intuitive interface for accepting hand gestures for convenient website control. For viewers who do not have a LEAP motion, the same actions which hand gestures can control, can be activated using the keyboard. A demo can be seen running at www.workbygavin.com
 
-Types of Controls:
-Left: Waving the hand to the left or pressing the left arrow key.
-Right: Waving the hand to the right or pressing the right arrow key.
-Up: Waving the hand vertically or pressing the up arrow key.
-Select: Holding the hand above the LEAP for about a second or pressing the enter key.
+Types of Controls:<br>
+<b>Left</b>: Waving the hand to the left or pressing the left arrow key.<br>
+<b>Right</b>: Waving the hand to the right or pressing the right arrow key.<br>
+<b>Up</b>: Waving the hand vertically or pressing the up arrow key.<br>
+<b>Select</b>: Holding the hand above the LEAP for about a second or pressing the enter key.<br>
 
-The LEAPnav can be added to a website by including a <canvas> html element with the id set to "leap-nav", as well as including the LEAPnav.js script and the jQuery.js and leap.js script which it relies on. The canvas element is recommended to be set to a width and height of 150 pixels.
+The LEAPnav can be added to a website by including a \<canvas\> html element with the id set to "leap-nav", as well as including the LEAPnav.js script and the jQuery.js and leap.js script which it relies on. The canvas element is recommended to be set to a width and height of 150 pixels.
 
 A JavaScript API is provided for sites to interact with the LEAPnav as follows:
 
-Display Customizations:
+<b>Display Customizations:</b>
 
-LEAPnav.enable(<string>);
+<code>LEAPnav.enable({string});</code>
 
 Takes in any string constant provided below and enables its function.
 
-LEAPnav.disable(<string>);
+<code>LEAPnav.disable({string});</code>
 
 Takes in any string constant provided below and disables its function.
 
-String Constants:
+<b>String Constants:</b>
 
-LEAPnav.Left - defaults to enabled.
-LEAPnav.Right - defaults to enabled.
-LEAPnav.Up - defaults to enabled.
-LEAPnav.Select - defaults to enabled.
-LEAPnav.Keyboard - defaults to enabled.
-LEAPnav.Gesture - defaults to enabled.
+<code>LEAPnav.Left</code> - defaults to enabled.<br>
+<code>LEAPnav.Right</code> - defaults to enabled.<br>
+<code>LEAPnav.Up</code> - defaults to enabled.<br>
+<code>LEAPnav.Select</code> - defaults to enabled.<br>
+<code>LEAPnav.Keyboard</code> - defaults to enabled.<br>
+<code>LEAPnav.Gesture</code> - defaults to disabled.<br>
 
-Callback Functions:
+<b>Callback Functions:</b>
 
-LEAPnav.onLeft(<function>);
+<code>LEAPnav.onLeft({function});</code>
 
 Sets a function to be called when the left command is fired.
 
-LEAPnav.onRight(<function>);
+<code>LEAPnav.onRight({function});</code>
 
 Sets a function to be called when the right command is fired.
 
-LEAPnav.onUp(<function>);
+<code>LEAPnav.onUp({function});</code>
 
 Sets a function to be called when the up command is fired.
 
-LEAPnav.onSelect(<function>);
+<code>LEAPnav.onSelect({function});</code>
 
 Sets a function to be called when the select command is fired.
 
